@@ -1,0 +1,456 @@
+@charset "UTF-8";
+body {
+	margin: 0;
+	padding: 0;
+}
+.tablebg {
+	background-image: url(images/address.gif);
+	background-repeat: no-repeat;
+	background-position: right 10px;
+}
+.addresscopy {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	color: white;
+	line-height: 20px;
+}
+.homepage_bodycopy {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	line-height: 22px;
+	color: #666666;
+	text-align: justify;
+	left: 20px;
+	top: 20px;
+	right: 20px;
+}
+.footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	color: #666666;
+}
+
+a:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #333333;
+	text-decoration: underline;
+}
+.property_header {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #333333;
+	text-decoration: underline;
+}
+a:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #333333;
+	text-decoration: underline;
+}
+a:active {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #333333;
+	text-decoration: underline;
+}
+.callout {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 24px;
+	font-weight: bold;
+	color: #FF6600;
+	text-transform: none;
+}
+.floorplan_bodycopy, .sansom-fun, .granary-list {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	color: #666666;
+	left: 20px;
+	top: 20px;
+	right: 20px;
+	line-height: normal;
+}
+
+.granary-list {
+	left: 10px;
+}
+
+ul.sansom-floorplans {
+	margin: 0;
+	padding-left: 20px;
+}
+.sansom-fun {
+	left: 0;
+}
+
+.bg_waverly {
+	background-image: url(images/waverly_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.bg_waverly2 {
+	background-image: url(images/waverly_banner_new2.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_waverly3 {
+	background-image: url(images/waverly_banner_new3.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_waverly4 {
+	background-image: url(images/waverly_banner_new4.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.waverly_neighborhood_bg {
+	background-image: url(images/waverlycourt_neighborhoodbg.gif);
+	background-repeat: no-repeat;
+	background-position: left 225px;
+}
+.bg_1501locust {
+	background-image: url(images/1501locust_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.callout_blue {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 24px;
+	font-weight: bold;
+	color: #06A5A6;
+	text-transform: none;
+}
+.bg_1501locust2 {
+	background-image: url(images/1501locust_banner_new.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1501locust3 {
+	background-image: url(images/1501locust_banner3.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1501locust4 {
+	background-image: url(images/1501locust_banner2.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_pineview {
+	background-image: url(images/pineview_banner1.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.callout_green {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 24px;
+	font-weight: bold;
+	color: #71BF44;
+	text-transform: none;
+}
+.bg_pineview2 {
+	background-image: url(images/pineview_banner_new2.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_pineview3 {
+	background-image: url(images/pineview_banner_new3.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_pineview4 {
+	background-image: url(images/pineview_banner4.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1200walnut {
+	background-image: url(images/1200walnut_banner_new.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1200walnut2 {
+	background-image: url(images/1200walnut_banner2.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1200walnut3 {
+	background-image: url(images/1200walnut_banner3.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1200walnut4 {
+	background-image: url(images/801walnut_banner2.gif); /* using same banner as 801 Walnut Floorplan */
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1126walnut {
+	background-image: url(images/1126walnut_banner_new.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1427walnut {
+	background-image: url(images/1427walnut_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_4415main {
+	background-image: url(images/4415main_banner.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_granary {
+	background-image: url(images/granary_banner_alt.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1137spruce {
+	background-image: url(images/1137spruce_banner_new.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1512walnut {
+	background-image: url(images/1512walnut_banner_new.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1512walnut2 {
+	background-image: url(images/1512walnut_banner_new2.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1512walnut3 {
+	background-image: url(images/1512walnut_banner_03.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.bg_1512walnut4 {
+	background-image: url(images/1512walnut_banner_new3.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+
+.propertyaddresses {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	line-height: 17px;
+	color: #666666;
+	text-align: justify;
+	left: 20px;
+	top: 20px;
+	right: 20px;
+}
+.homepage_bodycopy_larger {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-style: normal;
+	line-height: 22px;
+	color: #333333;
+	text-align: left;
+	left: 20px;
+	top: 20px;
+	right: 20px;
+}
+.propertyaddresses_smaller {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: 14px;
+	color: #666666;
+	text-align: justify;
+	left: 20px;
+	top: 20px;
+	right: 20px;
+}
+.topnavbg {
+	background-image: url(images/topnav.png);
+	background-repeat: repeat-x;
+}
+.bg_801walnut {
+	background-image: url(images/801walnut_banner_new1.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_801walnut2 {
+	background-image: url(images/801walnut_banner2.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_801walnut3 {
+	background-image: url(images/801walnut_banner_new3.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1510chestnut {
+	background-image: url(images/1510_banner_overview.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_801walnut4 {
+	background-image: url(images/801walnut_banner4.gif);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1510chestnut2 {
+	background-image: url(images/1510chestnut_banner2.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1510chestnut3 {
+	background-image: url(images/1510chestnut_banner3.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1510chestnut4 {
+	background-image: url(images/1510chestnut_banner4.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.bg_1600chestnut {
+                 background-image: url(images/1600chestnut_banner1.jpg);
+                 background-repeat: no-repeat;
+	         background-position: top;
+}
+
+.bg_1600chestnut2 {
+                 background-image: url(images/1600chestnut_banner2.jpg);
+                 background-repeat: no-repeat;
+	         background-position: top;
+}
+
+.bg_1600chestnut3 {
+                 background-image: url(images/1600chestnut_banner3.jpg);
+                 background-repeat: no-repeat;
+	         background-position: top;
+}
+
+.bg_1600chestnut4 {
+                 background-image: url(images/1600chestnut_banner4.jpg);
+                 background-repeat: no-repeat;
+	         background-position: top;
+}
+.bg_1733chestnut {
+	background-image: url(images/1733chestnutbanner_01.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1733chestnut2 {
+	background-image: url(images/1733chestnutbanner_02.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1733chestnut3 {
+	background-image: url(images/1733chestnutbanner_03.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_1733chestnut4 {
+	background-image: url(images/1733chestnutbanner_04.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_granary2 {
+	background-image: url(images/granary_banner_overview.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_granary3 {
+	background-image: url(images/granary_banner3.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.granary-promo, .sansom-apply-now {
+	position: absolute;
+	top: 230px;
+	left: 765px;
+}
+.bg_granary4 {
+	background-image: url(images/granary_banner4.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.bg_granary5 {
+	background-image: url(images/granary_banner_gallery.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.callout_granary, .callout_sansom {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 24px;
+	font-weight: bold;
+	color: #AFBD21;
+	text-transform: none;
+}
+
+/*
+** The Sansom
+*/
+
+/* background images */
+
+.sansom-banner-1 {
+	background-image: url(images/sansom-banner-2.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.sansom-banner-2 {
+	background-image: url(images/sansom-banner-3.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.sansom-banner-3 {
+	background-image: url(images/sansom-banner-roofdeck.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.sansom-banner-4 {
+	background-image: url(images/sansom-banner-alfresco.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.sansom-banner-5 {
+	background-image: url(images/sansom-banner-5.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.callout_sansom {
+	color: #bf331e;
+}
+
+.slideshow {
+	height: 75px;
+	width: 175px;
+}
+.sansom-promo {
+	padding-top: 10px;
+	height: 75px;
+	width: 175px;
+	position: absolute;
+	top: 430px;
+	left: 735px;
+}
