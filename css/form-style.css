@@ -1,0 +1,913 @@
+* { margin: 0; padding: 0; }
+a img { border: none; }
+a { text-decoration: none; }
+
+body {
+	font-family: "Aria", sans-serif;
+	font-size: 80%;
+}
+
+button, input, select, textarea {
+	margin: 0;
+}
+
+p {
+	line-height: 1.4em;
+}
+
+/* was blue, now it's green; don't ask.... */
+p.blue {
+	color: #AFBD21;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+p.slate-blue {
+	color: #575f5c;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.buffer {
+	padding-bottom: 20px;
+}
+
+h1#sansom-faq, h1#sansom {
+	clear: both;
+	font-size: 150%;
+	font-weight: bold;
+	color: #AFBD21;
+}
+
+
+h1#sansom-faq {
+	color: #bd3420;
+}
+
+	h1#granary, h1#sansom {
+		padding-bottom: 20px;
+		text-align: left;
+		width: 97%;
+		float: right;
+	}
+	
+h1#sansom {
+		color: #bd3420;
+	}
+	
+h2 {
+	font-size: 130%;
+	font-weight: normal;
+	padding-bottom: 20px;
+	color: #AFBD21;
+}
+
+form {
+	text-align: left;
+}
+
+#main-wrapper {
+	width: 960px;
+	padding: 0;
+	margin: 0;
+}
+
+.get-instructions {
+	float: right;
+	padding-right: 18%;
+	margin-top: -4.25%;
+	padding-bottom: 0;
+}
+
+.get-instructions a:link, .get-instructions a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.jqModal, .sansom-popup-faq {
+	background-color: #AFBD21;
+	display:inline-block;
+	color:#fff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:normal;
+	padding:6px 20px;
+	text-decoration:none;
+}
+
+.sansom-popup-faq {
+	background-color: #bd3420;
+}
+
+
+#header {
+	height: auto;
+	width: 550px;
+	margin: 0 auto;
+	padding-top: 40px;
+	padding-left: 20px;
+}
+
+#header #address {
+	color: #194489;
+	width: 475px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#header #address a:link, #header #address a:visited, #header #address a:hover, #header #address a:active {
+	color: #194489;
+	text-decoration: none;
+}
+
+#app-instructions {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+#app-instructions-granary {
+	position: absolute;
+	width: 500px;
+	text-align: center;
+	top: 4%;
+	left: 10%;
+	padding-bottom: 20px;
+}
+
+img#form-header {
+	padding-top: 20px;
+}
+
+#app-instructions ol, #app-instructions ul, #app-instructions-granary ol, #app-instructions-granary ul {
+	margin: 0 auto;
+	width: 450px;
+	padding-top: 30px;
+	list-style-position: outside;
+	
+}
+
+#app-instructions ul, #app-instructions-granary ul {
+	list-style-type: none;
+	padding-top: 15px;
+}
+
+#app-instructions ol li, #app-instructions-granary ol li, #app-instructions ul li, #app-instructions-granary ul li {
+	font-size: 14px;
+	text-align: left;
+	padding-top: 2px;
+	padding-bottom: 10px;
+	margin-left: 30px;
+}
+
+#app-instructions ul li, #app-instructions-granary ul li {
+	margin-left: 0;
+}
+
+
+#residential-rental-app {
+	width: 92%; /*800px*/
+	padding-top: 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+/*============================== form tags ==============================*/
+
+/*============ general organization ===================*/ 
+
+.left-half {
+	width: 50%;
+	float: left;
+	height: auto;
+}
+	.left-half-granary {
+		width: 40%;
+		float: left;
+		height: auto;
+	}
+
+.right-half {
+	width: 50%;
+	float: right;
+	height: auto;
+}
+	.right-half-granary {
+		width: 55%;
+		float: right;
+		height: auto;
+	}
+
+.inline {
+	width: 100%;
+	height: auto;
+	font-style: normal;
+}	
+
+.sansom-ref{
+	width: 150px;
+	height: auto;
+	font-style: normal;
+}
+
+input[type="radio"] {
+	width: 20px;
+	margin-right: 5px;
+}
+
+.fine-print {
+	font-size: 13px;
+}
+
+/* replaces hr */
+.line, #sansom-section-break {
+	clear: both;
+	width: 100%;
+	height: 25px;
+	border-top: 15px solid rgb(6, 165, 166);
+	margin: 0 auto;
+}
+
+#sansom-section-break {
+	border-top: 15px solid #a13929;
+}
+
+.thin-grey-line {
+	clear: both;
+	width: 94%;
+	height: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #ddd;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+/* fieldset numbering--ol was too much hackwork */
+.numbered   {
+	clear: both;
+	width: 1%;
+	float: left;
+	padding-top: 1.75%;
+	margin-left: -10px;
+	text-align: right;
+	font-weight: bold;
+	color: #aaa;
+	font-size: 115%;
+}
+
+
+
+fieldset {
+	width: 97%;
+	float: right;
+	border: none;
+	padding-bottom: 30px;
+}
+fieldset#referral {
+	padding-bottom: 80px;
+}
+
+.alt {
+	background-color: #f6f6f6;
+	border-radius: 5px;
+}
+
+.complete {
+	padding-top: 2%;
+}
+/*========= more specific container divs ==============*/
+
+.applicant-address {
+	width: 112%;
+	height: auto;
+}
+
+.reason-for-leaving {
+	width: 138.5%;
+	height: auto;
+}
+
+.landlord-address {
+	width: 110%;
+	height: auto;
+	text-align: left;
+}
+
+.employer-address {
+	width: 114.65%;
+	height: auto;
+}
+
+.resident-names {
+	width: 20%;
+	display: inline;
+	height: auto;
+	margin-right: 1%;
+}
+
+.pets {
+	width: 145%;
+	height: auto;
+	text-align: left;
+}
+
+.background-check {
+	width: auto;
+	height: auto;
+}
+
+.referring-source {
+	width: 800px;
+	height: auto;
+	padding-top: 5px;
+}
+
+#submit {
+	width: 300px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+#acknowledgement {
+	font-style: italic;
+	width: 98%;
+	padding-top: 15px;
+	margin: 0 auto;
+	margin-left: 0;
+}
+
+#acknowledgement p {
+	font-size: 92%;
+}
+
+#equal-opp {
+	width: 98%;
+	padding-top: 10px;
+	clear: both;
+	margin: 0 auto;
+}
+
+#equal-opp h2 {
+	font-size: 95%;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 2.5%;
+	margin-bottom: 20px;
+}
+
+fieldset#property-info {
+	width: 97%;
+	border: none;
+	padding-bottom: 30px;
+	margin: 0 auto;
+}
+
+fieldset#granary-property-info {
+	width: 90%;
+	text-align: left;
+	float: left;
+}
+
+fieldset#submit-app {
+	width: 97%;
+	text-align: left;
+	margin: 0 auto;
+	margin-top: -6%;
+	
+}
+
+/* ======== form inputs and labels and such =============*/
+
+input, .left-half input, .right-half input, select
+{
+  margin: 1em 0 0 0;
+  width: 60%;
+  border: 1px solid #ccc;
+  padding: 3px;
+  background: transparent;
+}
+
+.right-half input {
+	width: 70%;
+}
+
+.left-half-auth input {
+	width: 70%;
+}
+
+input#deposit {
+	width: 265px;
+}
+
+input#app-fee {
+	width: 305px;
+}
+
+input#property-granary {
+	width: 68%;
+}
+
+input#property {
+	width: 260px;
+}
+
+input#unit {
+	width: 287px;
+}
+
+input#unit-granary {
+	width: 63.25%;
+}
+
+
+input#one-br, input#two-br, input#undecided {
+	width: 5%;
+	margin-right: 5%;
+}
+
+
+input#reservation-fee {
+	width: 55%;
+}
+
+
+input#move-in-date {
+	width: 317px;
+}
+
+input#approx-move-in-date {
+	width: 34%;
+}
+
+input#lease-start-date {
+	width: 296px;
+}
+
+input#applicant-name {
+	width: 236px;
+}
+	input#applicant-name-granary {
+		width: 73.75%;
+	}
+input#email-address {
+	width: 243px;
+}
+	input#email-address-granary {
+		width: 75%;
+	}
+input#home-phone {
+	width: 318px;
+}
+	input#home-phone-granary {
+		width: 77%;
+	}
+input#cell-phone {
+	width: 330px;
+}
+	input#cell-phone-granary {
+		width: 79.5%;
+	}
+input#applicant-address {
+	width: 599px;
+}
+	input#applicant-address-granary {
+		width: 45.5%;
+	}
+input#length-of-residency {
+	display: inline;
+	width: 10%;
+	height: auto;
+	padding-right: 5px;
+	margin-right: 1%;
+}
+
+input#reason-for-leaving {
+	width: 709px;
+}
+
+input#ssn {
+	display: inline;
+	width: 20%;
+	height: auto;
+	padding-right: 5px;
+	margin-right: 1%;
+}
+
+input#dob {
+	display: inline;
+	width: 226px;
+	height: auto;
+}
+
+input#present-landlord {
+	display: inline;
+	height: auto;
+	width: 28%;
+	margin-right: 1%;
+}
+
+input#landlord-address {
+	width: 594px;
+}
+
+input#landlord-phone {
+	display: inline;
+	height: auto;
+	width: 15%;
+	margin-right: 1%;
+}
+
+input#rent {
+	display: inline;
+	height: auto;
+	width: 181px;
+}
+
+input#pets {
+	width: 739px;
+}
+
+input#resident1, input#resident2, input#resident3, input#resident4 {
+	width: 190px;
+	display: inline;
+	height: auto;
+	margin-right: 10px;
+}
+
+input#evicted-yes, input#evicted-no, input#bankruptcy-yes, input#bankruptcy-no, input#conviction-yes, input#conviction-no {
+	width: 45px;
+	display: inline;
+	margin: 5px;
+}
+
+input#employer {
+	width: 21%;
+	height: auto;
+	display: inline;
+	margin-right: 1%;
+}
+
+input#title {
+	width: 17%;
+	height: auto;
+	display: inline;
+	margin-right: 1%;
+}
+
+input#work-phone {
+	width: 12.5%;
+	height: auto;
+	display: inline;
+	margin-right: 1%;
+}
+
+input#work-fax {
+	width: 111px;
+	height: auto;
+	display: inline;
+	margin-right: 1%;
+}
+
+input#monthly-salary {
+	width: 20%;
+	height: auto;
+	display: inline;
+	margin-right: 1%;
+}
+
+input#length-employment {
+	width: 10%;
+	height: auto;
+	display: inline;
+	margin-right: 1%;
+}
+
+input#other-income {
+	width: 606px;
+	height: auto;
+}
+
+input#checking-acct-name {
+	width: 179px;
+	margin-right: 10px;
+}
+
+input#checking-acct-balance {
+	width: 20%;
+}
+
+input#savings-acct-name {
+	width: 22%;
+	margin-right: 1%;
+}
+
+input#savings-acct-balance {
+	width: 21.75%;
+}
+
+input#personal-ref, input#emergency-contact {
+	width: 25%;
+	margin-right: 1%;
+}
+
+input#ref-rel, input#emergency-contact-rel {
+	width: 19.25%;
+	margin-right: 1%;
+}
+
+input#ref-phone, input#emergency-contact-phone {
+	width: 153px;
+}
+
+input#craigslist, input#fourwallsinphilly, input#building-sign, input#referral, input#search {
+	width: 3%;
+	margin-right: 1%;
+	border: none;
+	
+}
+
+input#other-source {
+	width: 130px;
+}
+input#other-source-granary {
+	width: 28.5%;
+}
+
+input#signature {
+	width: 3%;
+	margin-right: 1%;
+}
+
+input#auth-tenant-ref, input#auth-employment-ref {
+	width: 2%;
+	margin-right: 1%;
+	display: inline;
+}
+
+input#sig-date {
+	width: 9%;
+}
+
+input#auth-tenant-ref-date {
+	width: 9%;
+	display: inline;
+}
+
+input#auth-employment-ref-date {
+	width: 9%;
+	display: inline;
+}
+
+input#submit-btn, input#sansom-submit-btn {
+	width: 22%;
+	background-color: #AFBD21;
+	color: #fff;
+	border: none;
+	padding: 6px 20px;
+}
+
+input#sansom-submit-btn {
+	background-color: #bd3420;
+}
+
+p.inline {
+	display: inline;
+}
+
+.other {
+	padding-top: 10px;
+}
+
+p.single-line {
+	padding-top: 1.5%;
+	display: block;
+	color: #AFBD21;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+p.single-line.error-message {
+	color: red;
+	font-size: 80%;
+	padding-bottom: 1%;
+}
+
+p.error-message {
+	color: red;
+	font-size: 80%;
+	padding-bottom: 1%;
+}
+
+
+p.single-line-granary {
+	padding-top: .5%;
+	display: block;
+	color: rgb(6, 165, 166);
+	font-weight: bold;
+	font-size: 100%;
+}
+
+input:focus, select:focus
+{
+  border: 1px solid #194489;
+}
+
+label {
+	padding-right: 3px;
+	color: #AFBD21;
+	font-weight: bold;
+	font-size: 90%;
+}
+
+.cherry-red, p.cherry-red {
+	color: #bd3420;
+}
+
+/*
+.black {
+	color: #000;
+	font-weight: normal;
+}
+*/
+label.radio-btn {
+	margin-right: -1.5%;
+}
+
+label.error { 
+	float: none; 
+	color: red; 
+	padding-left: .5em; 
+	vertical-align: top; 
+}
+
+textarea {
+  margin: 1em 0 0 0;
+  width: 826px;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  background: transparent;
+  overflow: auto;
+}
+
+/*
+select {
+	font-size: 11px;
+	font-family: inherit;
+	padding: 3px 0 3px 0;
+	letter-spacing: normal
+}
+*/
+
+.clear {
+	clear: both;
+}
+
+/* validation */
+
+.error_box {
+    background:#FAD3C4;
+    border:1px solid #A75B4E;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    color:#444444;
+    display:none;
+    font-size:13px;
+    margin:0px 0px 15px 0px;
+    padding:8px 8px;
+    width:672px;
+}
+
+.success_box {
+    background:#E2F1BB;
+    border:1px solid #598800;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    color:#000000;
+    display:none;
+    font-size:13px;
+    margin:0px 0px 15px 0px;
+    padding:8px 8px;
+    width:672px;
+}
+
+/* confirmation pages */
+
+h2#granary-confirmation {
+	padding-top: 20px;
+	font-size: 300%;
+	font-weight: bold;
+	color: #AFBD21;
+	padding-bottom: 25px;
+}
+
+#next-steps {
+	width: 92.5%;
+	margin: 0 auto;
+	padding-top: 2%;
+}
+
+#next-steps p {
+	font-size: 135%;
+}
+
+.steps {
+	float: left;
+	width: 4%
+	height: auto;
+	padding-left: 1.5%;
+}
+	
+/* faq overlay tags */
+
+.instructions {
+	float: right;
+	width: 100%;
+	height: auto;
+	text-align: left;
+	padding-bottom: 3%;
+	padding-top: 0.3%;
+}
+
+.instructions a:link, .instructions a:visited, .instructions a:hover, .instructions a:active {
+	color: #AFBD21;
+	font-weight: bold;
+	font-size: 100%;
+}	
+
+.instructions-sansom a:link, .instructions-sansom a:visited, .instructions-sansom a:hover, .instructions a:active {
+	color: #bd3420;
+	font-size: 100%;
+	font-weight: bold;
+}
+	
+.instructions em {
+	color: #AFBD21;
+	font-weight: bold;
+	font-size: 110%;
+	font-style: normal;
+	padding-right: 0.5%;
+}
+
+#ready-button {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+}
+
+/* redesign */
+
+.sansom-app, p.sansom-app {
+		color: #104980;
+}
+
+label.left {
+	width: 18%;
+	text-align: left;
+	float: left;
+	margin: 0 0 1em 0;
+	padding-top: 0.2em;
+}
+
+input.right , select.right {
+	width: 30%;
+	text-align: left;
+	float: left;
+	padding-left: 1%;
+	margin: 0 0 1em 0;
+}
+
+p {
+	clear: both;
+}
+
+p.inline {
+	clear: both;
+}
+
+.radio-btns {
+	clear: both;
+	width: 50%;
+	text-align: left;
+	float: left;
+	padding-bottom: 2%;
+	margin-top: -0.75%;
+	padding-top: 0;
+}
+
+.error-message {
+	color: #ea5656;
+}
+
+.smaller {
+	font-size: 90%;
+}

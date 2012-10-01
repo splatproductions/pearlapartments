@@ -1,0 +1,462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="css/form-style.css" rel="stylesheet" type="text/css" />
+<link href="css/jqModal.css" rel="stylesheet" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+<script src="js/jqModal.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://jzaefferer.github.com/jquery-validation/jquery.validate.js"></script>
+
+<title>Pearl Apartments | Residential Rental Application</title>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="untitled.css" rel="stylesheet" type="text/css" />
+<meta name="Keywords" content="1501 Locust, floorplans, 1501 Locust floorplans" />
+<meta name="Description" content="View floorplans for 1501 Locust one bedroom and two bedroom units." />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3733995-6']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+$().ready(function() {
+  $('#app-instructions').jqm();
+  $("#rentalApp").validate();
+});
+</script>
+
+</head>
+
+<body onload="MM_preloadImages('images/floorplans_02.gif','images/gallery_02.gif','images/neighborhood_02.gif','images/overview_02.gif')">
+<div align="left">
+  <table width="960" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><div align="left">
+        <table width="960" border="0" cellpadding="0" cellspacing="0" class="bg_1733chestnut2">
+          <tr>
+            <td colspan="2"><table width="960" border="0" cellpadding="0" cellspacing="0" class="topnavbg">
+              <tr>
+                <td width="300"><a href="index.html"><img src="images/logo.gif" alt="pearl apartments" width="300" height="50" border="0" /></a></td>
+                <td width="435" valign="middle">&nbsp;</td>
+                <td width="225"><div align="left"><img src="images/topnav_black.gif" alt="" width="207" height="17" border="0" usemap="#MapMap" /></div></td>
+              </tr>
+            </table>
+              <map name="MapMap" id="MapMap">
+                <area shape="rect" coords="131,1,207,17" href="properties.html" />
+                <area shape="rect" coords="67,1,109,16" href="index.html" />
+              </map></td>
+            </tr>
+          <tr>
+            <td width="301"><div align="left"><img src="images/spacer.gif" width="10" height="10" /><br />
+              <img src="images/reservenow.png" alt="Reserve Now!" width="200" height="240" hspace="15" /><br />
+            </div></td>
+            <td width="659">&nbsp;</td>
+          </tr>
+        </table>
+      </div></td>
+    </tr>
+
+    <tr>
+      <td><table width="952" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td>
+            <img src="images/bluearrow_fullwidth.gif" width="960" height="43" /><br />
+            </a><br /></td>
+          </tr>
+        <tr>
+          <td>
+		  
+			<div id="main-wrapper">
+			
+			<div class="get-instructions">
+				<a href="#" class="jqModal">Review Application Instructions</a>			</div>
+			
+			<div id="residential-rental-app">
+				<h1>RESIDENTIAL RENTAL APPLICATION</h1>
+				<h2>(Each adult must complete a separate application)</h2>
+				
+				
+				
+			<!-- initially hidden -->
+			<div class="jqmWindow" id="app-instructions">
+					<a href="#" class="jqmClose"><img src="images/close.gif" /></a>
+				<h1>RENTAL APPLICATION INSTRUCTIONS</h1>
+				<ol>
+					<li>Complete the online application as completely as possible.</li>
+					<li>Once your application is completed hit "submit". You will then be directed to the Rentpayment system so you can pay the required fees online. </li>
+					<li>The deposit required to hold an apartment is one month&#39;s rent; a $75 application fee must also be included for each application submitted.</li>
+					<li>Note that you may only pay via the Rentpayment system if you are a resident of the United States.  If you are applying for an apartment from outside the United States and do not have access to a U.S. Bank account then please contact us for instructions on wiring the amount due.</li>
+					<li>If you are not a U.S. resident, please include a copy of your Graduate School acceptance letter or your Employment Offer. </li>
+					<li>We will confirm receipt of application and payment within 24 hours.</li>
+				</ol>
+			</div>
+			
+				<form action="process_app.php" id="rentalApp" name="rentalApp" method="post">
+				
+					<fieldset id="property-info">
+					
+						<div class="left-half">
+							
+							<p><label for="property">Property:</label> <input type="text" name="property" id="property" /></p>
+							
+							<p><label for="unit">Unit:</label> <input type="text" name="unit" id="unit" /></p>
+							
+							<p><label for="deposit">Deposit:</label> <input type="text" name="deposit" id="deposit" value="$" /></p>
+						</div>
+						
+						<div class="right-half">
+							
+							<p><label for="app-fee">Application Fee:</label> <input type="text" name="app-fee" id="app-fee"  value="$75" /></p>
+							
+							<p><label for="lease-start-date">Lease Start Date:</label> <input type="text" name="lease-start-date" id="lease-start-date" /></p>
+							
+							<p><label for="move-in-date">Move-in Date:</label> <input type="text" name="move-in-date" id="move-in-date" /></p>
+						</div>
+					</fieldset>
+				
+					
+					<div class="numbered"><p>1.</p></div>
+					
+					<fieldset>
+			
+							<div class="left-half">
+							
+								<p><label for="applicant-name">Applicant Name:</label> <input type="text" name="applicant-name" id="applicant-name" /></p>
+								
+								<p><label for="email-address">Email Address:</label> <input type="text" name="email-address" id="email-address" /></p>
+							</div>
+							
+							<div class="right-half">
+							
+								<p><label for="home-phone">Home Phone:</label> <input type="text" name="home-phone" id="home-phone" /></p>
+								
+								<p><label for="cell-phone">Cell Phone:</label> <input type="text" name="cell-phone" id="cell-phone" /></p>
+							</div>
+							
+							
+							<div class="applicant-address">
+							
+								<p><label for="applicant-address">Present Street Address, City, State, Zip:</label> <input type="text" name="applicant-address" id="applicant-address" /></p>
+							</div>
+							
+							<div class="inline">
+							
+								<p class="inline"><label for="length-of-residency">How long have you lived there (years)?</label> <input type="text" name="length-of-residency" id="length-of-residency" /></p>
+								
+								<p class="inline"><label for="ssn">SSN#:</label> <input type="text" maxlength="11" name="ssn" id="ssn" /></p>
+								
+								<p class="inline"><label for="dob">DOB:</label> <input type="text" name="dob" id="dob" /></p>
+							</div>
+							
+							<div class="reason-for-leaving">
+								
+								<p><label for="reason-for-leaving">Reason for Leaving:</label> <input type="text" name="reason-for-leaving" id="reason-for-leaving" /></p>
+							</div>
+					</fieldset> <!-- end of fieldset -->
+				
+				
+				
+					<div class="numbered"><p>2.</p></div>
+				
+					<fieldset>
+				
+							<div class="inline">
+							
+								<p class="inline"><label for="present-landlord">Present Landlord:</label> <input type="text" name="present-landlord" id="present-landlord" /></p>
+								
+								<p class="inline"><label for="landlord-phone">Phone:</label> <input type="text" name="landlord-phone" id="landlord-phone" /></p>
+								
+								<p class="inline"><label for="rent">Monthly Rent:</label> <input type="text" name="rent" id="rent" value="$" /></p>
+							</div>
+							
+							<div class="landlord-address">
+								
+								<p><label for="landlord-address">Landlord Street Address, City, State, Zip:</label> <input type="text" name="landlord-address" id="landlord-address" /></p>
+							</div>
+					</fieldset>
+					
+					<div class="numbered"><p>3.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="single-line"><label>Full names of all individuals (and ages of all children) who will be occupying premises:</label></p>
+									
+									<div class="resident-names">
+										
+										<input type="text" name="resident1" id="resident1" />
+									
+										<input type="text" name="resident2" id="resident2" />
+									
+										<input type="text" name="resident3" id="resident3" />
+									
+										<input type="text" name="resident4" id="resident4" />
+									</div>
+							</div>
+					</fieldset>
+					
+					<div class="numbered"><p>4.</p></div>
+					
+					<fieldset>
+					
+							<div class="pets">
+							
+								<p><label for="pets">Pets (specify):</label> <input type="text" name="pets" id="pets" /></p>
+							</div>
+					</fieldset>
+					
+					<div class="numbered"><p>5.</p></div>
+					
+					<fieldset>
+					
+							<div class="background-check">
+							
+								<p class="single-line">If your answer to any of the following is yes, be prepared to explain any mitigating circumstances:</p>
+								
+								<p><label class="black" for="eviction">Have you been party to an eviction?</label> 
+									
+									<label class="radio-btn" for="eviction">Yes</label><input type="radio" name="eviction" value="yes" id="evicted-yes" />
+									<label class="radio-btn" for="eviction">No</label><input type="radio" name="eviction" value="no" id="evicted-no" />
+								</p>
+								
+								<p><label class="black"  for="bankruptcy">Have you filed bankruptcy within the past seven (7) years?</label>
+								
+									<label class="radio-btn" for="bankruptcy">Yes</label><input type="radio" name="bankruptcy" value="yes" id="bankruptcy-yes" />
+									<label class="radio-btn" for="bankruptcy">No</label><input type="radio" name="bankruptcy" value="no" id="bankruptcy-no" />
+								</p>
+								
+								<p><label class="black" for="conviction">Have you been convicted of a crime other than a traffic violation?</label>
+								
+									<label class="radio-btn" for="conviction">Yes</label><input type="radio" name="conviction" value="yes" id="conviction-yes" />
+									<label class="radio-btn" for="conviction">No</label><input type="radio" name="conviction" value="no" id="conviction-no"  />
+								</p>
+								
+								<p class="single-line"><label for="explanation">Explanation:</p>
+								<textarea name="explanation" id="explanation"></textarea>
+								
+							</div>
+					</fieldset>
+					
+					<div class="numbered"><p>6.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="employer">Present Employer:</label> <input type="text" name="employer" id="employer" /></p>
+
+								<p class="inline"><label for="title">Title:</label> <input type="text" name="title" id="title" /></p>
+								
+								<p class="inline"><label for="work-phone">Phone:</label> <input type="text" name="work-phone" id="work-phone" /></p>
+								
+								<p class="inline"><label for="work-fax">Fax:</label> <input type="text" name="work-fax" id="work-fax" /></p>
+							</div>
+							
+							<div class="employer-address">
+								
+								<p><label for="employer-address">Employer Street Address, City, State, Zip:</label> <input type="text" name="employer-address" id="employer-address" /></p>
+							</div>
+							
+							<div class="inline">
+							
+								<p class="inline"><label for="monthly-salary">Gross Monthly Salary:</label> <input type="text" name="monthly-salary" id="monthly-salary" /></p>
+								
+								<p class="inline"><label for="length-employment">Length of Employment:</label> <input type="text" name="length-employment" id="length-employment" /></p>
+							</div>
+					</fieldset>
+					
+					<div class="numbered"><p>7.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="other-income">Other Income, if any (specify source):</label> <input type="text" name="other-income" id="other-income" /></p>
+							</div>
+					</fieldset>
+					
+					<div class="numbered"><p>8.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="checking-acct-name">Personal Checking Account Bank Name:</label> <input type="text" name="checking-acct-name" id="checking-acct-name" /></p>
+								
+								<p class="inline"><label for="checking-acct-balance">Personal Checking Account Balance:</label> <input type="text" name="checking-acct-balance" id="checking-acct-balance" /></p>
+							</div>
+							
+							<div class="inline">
+							
+								<p class="inline"><label for="savings-acct-name">Personal Savings Account Bank Name:</label> <input type="text" name="savings-acct-name" id="savings-acct-name" /></p>
+								
+								<p class="inline"><label for="savings-acct-balance">Personal Saving Account Balance:</label> <input type="text" name="savings-acct-balance" id="savings-acct-balance" /></p>
+							</div>
+					</fieldset>
+					
+					<div class="numbered"><p>9.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="personal-ref">Personal Reference:</label> <input type="text" name="personal-ref" id="personal-ref" /></p>
+								
+								<p class="inline"><label for="ref-rel">Relationship:</label> <input type="text" name="ref-rel" id="ref-rel" /></p>
+								
+								<p class="inline"><label for="ref-phone">Phone:</label> <input type="text" name="ref-phone" id="ref-phone" /></p>
+							</div>
+					</fieldset>
+					
+					<div class="numbered"><p>10.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="emergency-contact">Emergency Contact:</label> <input type="text" name="emergency-contact" id="emergency-contact" /></p>
+								
+								<p class="inline"><label for="emergency-contact-rel">Relationship:</label> <input type="text" name="emergency-contact-rel" id="emergency-contact-rel" /></p>
+								
+								<p class="inline"><label for="emergency-contact-phone">Phone:</label> <input type="text" name="emergency-contact-phone" id="emergency-contact-phone" /></p>
+							</div>
+					</fieldset>
+					
+					<div class="numbered"><p>11.</p></div>
+					
+					<fieldset id="referral">
+					
+							<div class="referring-source">
+								
+								<p class="single-line">How did you hear about this apartment:</p>
+								
+								<p class="inline"><label class="black" for="craigslist">Craigslist</label><input type="radio" name="referring-source" id="craigslist" value="craigslist"/></p>
+					
+								<p class="inline"><label class="black" for="fourwallsinphilly">4WallsinPhilly.com</label><input type="radio" name="referring-source" id="fourwallsinphilly" value="fourwallsinphilly" /></p>
+								
+								<p class="inline"><label class="black" for="building-sign">Building Sign</label><input type="radio" name="referring-source" id="building-sign" value="building-sign" /></p>
+								
+								<p class="inline"><label class="black" for="referral">Referral</label><input type="radio" name="referring-source" id="referral" value="referral" /></p>
+								
+								<p class="inline"><label class="black" for="search">Search Engine / Internet</label><input type="radio" name="referring-source" id="search" value="search" /></p>
+								
+								<p class="inline"><label class="black" for="other-source">Other:</label> <input type="text" name="referring-source" id="other-source" /></p>
+							</div>
+					</fieldset>
+			
+			</div> <!-- end residential-rental-app -->
+		
+			<div class="line"></div>
+			
+			<div id="acknowledgement">
+
+				<fieldset>
+				
+					<p>I certify that the above information is true and complete. I hereby grant permission to Pearl Properties to request my credit report for the purpose of tenant screening. I authorize the verification of this information by contacting any or all individuals and financial institutions listed above. I understand that a criminal background check may be conducted in conjunction with this application. I understand that this is not a lease or an offer to rent, however, a nonrefundable application fee equal to one month&#39;s rent shall accompany this application. If this application is approved, the application fee shall be applied to the security deposit for the above referenced unit. If this application is not approved, the application fee shall be returned (less a $75 processing fee) to Applicant immediately. This Application shall remain the property of the Owner.</p>
+					<br />
+					
+
+					<div class="inline">
+						
+						<p class="inline"><label for="signature">By checking this box I acknowledge that I have read the above and completed the application:</label><input type="checkbox" name="signature" id="signature" value="yes" /></p>
+						
+						<p class="inline"><label for="sig-date">Date:</label> <input type="text" name="sig_date" id="sig-date" class="required" /></p>
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					
+					<div class="inline">
+					
+						<p class="inline fine-print"><label for="auth-tenant-ref">I hereby consent to allow Pearl Properties to verify my tenant references, if necessary, for the processing of this application:</label></p>
+						
+						<!-- note that the names of these inputs have underscores to eventually work with validate.js -->
+						<p class="inline"><label for="auth-tenant-ref"><input type="checkbox" name="auth_tenant_ref" id="auth-tenant-ref" value="yes" /></p>
+						
+						<p class="inline"><label for="auth-tenant-ref-date">Date:</label> <input type="text" name="auth_tenant_ref_date" id="auth-tenant-ref-date" /></p>
+					</div>
+				</fieldset>
+				
+				<fieldset>
+					
+					<div class="inline">
+						
+						<p class="inline fine-print"><label for="authorize-employment-ref">I hereby consent to allow Pearl Properties to verify my employment references, if necessary, for the processing of this application:</label></p>
+						
+						<p class="inline"><input type="checkbox" name="auth_employment_ref" id="auth-employment-ref" value="yes" /></p>
+						
+						<p class="inline"><label for="auth-employment-ref-date">Date:</label> <input type="text" name="auth_employment_ref_date" id="auth-employment-ref-date" /></p>
+					</div>
+					
+					<div class="inline complete">
+					
+						<!-- submit button -->
+						<p><input type="submit" name="submit" id="submit-btn" value="Submit Application" /></p>
+					</div>
+				</fieldset>
+			</div>
+			
+			<div id="equal-opp">
+				<h2>NO PERSON SHALL BE DENIED THE RIGHT TO RENT OUR PROPERTY BECAUSE OF THEIR RACE, COLOR, RELIGION, SEX, NATIONAL ORIGIN OR ANCESTRY.</h2>
+			</div>
+			</form>
+		</div> <!-- end main-wrapper -->		  </td>
+        </tr>
+        <tr>
+          <td><p align="right" class="homepage_bodycopy"><br />
+          </p>
+            <div align="right"><span class="footer">© 2012 Pearl Apartments</span></div></td>
+          </tr>
+      </table></td>
+    </tr>
+  </table>
+</div>
+  
+</body>
+</html>
+

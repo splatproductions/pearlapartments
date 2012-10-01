@@ -1,0 +1,400 @@
+<html>
+	<head>
+		<title>Pearl Apartments | Pearl Properties Residential Rental Application</title>
+
+		<link rel="stylesheet" type="text/css" href="css/form-style.css" />
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+		
+	</head>
+	
+	<body>
+		<div id="main-wrapper">
+			<div id="header">
+				<img src="images/pearl-properties-logo.gif" />
+				<div id="address">
+					<p>1425 Walnut Street -- Suite 300, Philadelphia, PA 19102</p>
+					<p>(215) 568-0500 Phone &bull; (215) 568-0505 Fax</p>
+					<p><a href="http://www.pearl-properties.com">www.pearl-properties.com</a></p>
+				</div>
+			</div><!-- end of header -->
+			
+			<div id="app-instructions">
+				<h1>RENTAL APPLICATION INSTRUCTIONS</h1>
+				<ol>
+					<li>Complete the first two pages of the application as completely as possible.</li>
+					<li>Once your application is completed hit "submit". You will then be directed to the Rentpayment system so you can pay the required fees online. </li>
+					<li>The deposit required to hold an apartment is one month&#39;s rent; a $75 application fee must also be included for each application submitted.</li>
+					<li>Note that you may only pay via the Rentpayment system if you are a resident of the United States.  If you are applying for an apartment from outside the United States and do not have access to a U.S. Bank account then please contact us for instructions on wiring the amount due.</li>
+					<li>If you are not a U.S. resident, please include a copy of your Graduate School acceptance letter or your Employment Offer. </li>
+					<li>We will confirm receipt of application and payment within 24 hours.</li>
+				</ol>
+			</div><!-- end of app-instructions -->
+			
+			<div class="line"></div>
+			
+			<div id="residential-rental-app">
+				<h1>RESIDENTIAL RENTAL APPLICATION</h1>
+				<h2>(Each adult must complete a separate application)</h2>
+				
+				<form action="process_app.php" method="post">
+				
+					<fieldset id="property-info">
+					
+						<div class="left-half">
+							
+							<p><label for="property">Property:</label> <input type="text" name="property" id="property" /></p>
+							
+							<p><label for="unit">Unit:</label> <input type="text" name="unit" id="unit" /></p>
+							
+							<p><label for="deposit">Deposit:</label> <input type="text" name="deposit" id="deposit" value="$" /></p>
+						
+						</div>
+						
+						<div class="right-half">
+							
+							<p><label for="app-fee">Application Fee:</label> <input type="text" name="app-fee" id="app-fee"  value="$75" /></p>
+							
+							<p><label for="lease-start-date">Lease Start Date:</label> <input type="text" name="lease-start-date" id="lease-start-date" /></p>
+							
+							<p><label for="move-in-date">Move-in Date:</label> <input type="text" name="move-in-date" id="move-in-date" /></p>
+						
+						</div>
+						
+					</fieldset>
+				
+					
+					<div class="numbered"><p>1.</p></div>
+					
+					<fieldset>
+			
+							<div class="left-half">
+							
+								<p><label for="applicant-name">Applicant Name:</label> <input type="text" name="applicant-name" id="applicant-name" /></p>
+								
+								<p><label for="email-address">Email Address:</label> <input type="text" name="email-address" id="email-address" /></p>
+								
+							</div>
+							
+							<div class="right-half">
+							
+								<p><label for="home-phone">Home Phone:</label> <input type="text" name="home-phone" id="home-phone" /></p>
+								
+								<p><label for="cell-phone">Cell Phone:</label> <input type="text" name="cell-phone" id="cell-phone" /></p>
+							
+							</div>
+							
+							
+							<div class="applicant-address">
+							
+								<p><label for="applicant-address">Present Street Address, City, State, Zip:</label> <input type="text" name="applicant-address" id="applicant-address" /></p>
+								
+							</div>
+							
+							<div class="inline">
+							
+								<p class="inline"><label for="length-of-residency">How long have you lived there (years)?</label> <input type="text" name="length-of-residency" id="length-of-residency" /></p>
+								
+								<p class="inline"><label for="ssn">SSN#:</label> <input type="text" maxlength="11" name="ssn" id="ssn" /></p>
+								
+								<p class="inline"><label for="dob">DOB:</label> <input type="text" name="dob" id="dob" /></p>
+								
+							</div>
+							
+							<div class="reason-for-leaving">
+								
+								<p><label for="reason-for-leaving">Reason for Leaving:</label> <input type="text" name="reason-for-leaving" id="reason-for-leaving" /></p>
+								
+							</div>
+								
+					</fieldset> <!-- end of fieldset -->
+				
+				
+				
+					<div class="numbered"><p>2.</p></div>
+				
+					<fieldset>
+				
+							<div class="inline">
+							
+								<p class="inline"><label for="present-landlord">Present Landlord:</label> <input type="text" name="present-landlord" id="present-landlord" /></p>
+								
+								<p class="inline"><label for="landlord-phone">Phone:</label> <input type="text" name="landlord-phone" id="landlord-phone" /></p>
+								
+								<p class="inline"><label for="rent">Monthly Rent:</label> <input type="text" name="rent" id="rent" value="$" /></p>
+								
+							</div>
+							
+							<div class="landlord-address">
+								
+								<p><label for="landlord-address">Landlord Street Address, City, State, Zip:</label> <input type="text" name="landlord-address" id="landlord-address" /></p>
+								
+							</div>
+				
+					</fieldset>
+					
+					<div class="numbered"><p>3.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="single-line"><label>Full names of all individuals (and ages of all children) who will be occupying premises:</label></p>
+									
+									<div class="resident-names">
+										
+										<input type="text" name="resident1" id="resident1" />
+									
+										<input type="text" name="resident2" id="resident2" />
+									
+										<input type="text" name="resident3" id="resident3" />
+									
+										<input type="text" name="resident4" id="resident4" />
+										
+									</div>
+								
+							</div>
+							
+					</fieldset>
+					
+					<div class="numbered"><p>4.</p></div>
+					
+					<fieldset>
+					
+							<div class="pets">
+							
+								<p><label for="pets">Pets (specify):</label> <input type="text" name="pets" id="pets" /></p>
+								
+							</div>
+							
+					</fieldset>
+					
+					<div class="numbered"><p>5.</p></div>
+					
+					<fieldset>
+					
+							<div class="background-check">
+							
+								<p class="single-line">If your answer to any of the following is yes, be prepared to explain any mitigating circumstances:</p>
+								
+								<p><label for="eviction">Have you been party to an eviction?</label> 
+									
+									<label class="radio-btn" for="eviction">Yes</label><input type="radio" name="eviction" value="yes" id="evicted-yes" />
+									<label class="radio-btn" for="eviction">No</label><input type="radio" name="eviction" value="no" id="evicted-no" />
+								
+								</p>
+								
+								<p><label for="bankruptcy">Have you filed bankruptcy within the past seven (7) years?</label>
+								
+									<label class="radio-btn" for="bankruptcy">Yes</label><input type="radio" name="bankruptcy" value="yes" id="bankruptcy-yes" />
+									<label class="radio-btn" for="bankruptcy">No</label><input type="radio" name="bankruptcy" value="no" id="bankruptcy-no" />
+									
+								</p>
+								
+								<p><label for="conviction">Have you been convicted of a crime other than a traffic violation?</label>
+								
+									<label class="radio-btn" for="conviction">Yes</label><input type="radio" name="conviction" value="yes" id="conviction-yes" />
+									<label class="radio-btn" for="conviction">No</label><input type="radio" name="conviction" value="no" id="conviction-no"  />
+									
+								</p>
+								
+								<p class="single-line"><label for="explanation">Explanation:</p>
+								<textarea name="explanation" id="explanation"></textarea>
+								
+							</div>
+							
+					</fieldset>
+					
+					<div class="numbered"><p>6.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="employer">Present Employer:</label> <input type="text" name="employer" id="employer" /></p>
+
+								<p class="inline"><label for="title">Title:</label> <input type="text" name="title" id="title" /></p>
+								
+								<p class="inline"><label for="work-phone">Phone:</label> <input type="text" name="work-phone" id="work-phone" /></p>
+								
+								<p class="inline"><label for="work-fax">Fax:</label> <input type="text" name="work-fax" id="work-fax" /></p>
+					
+							</div>
+							
+							<div class="employer-address">
+								
+								<p><label for="employer-address">Employer Street Address, City, State, Zip:</label> <input type="text" name="employer-address" id="employer-address" /></p>
+								
+							</div>
+							
+							<div class="inline">
+							
+								<p class="inline"><label for="monthly-salary">Gross Monthly Salary:</label> <input type="text" name="monthly-salary" id="monthly-salary" /></p>
+								
+								<p class="inline"><label for="length-employment">Length of Employment:</label> <input type="text" name="length-employment" id="length-employment" /></p>
+								
+							</div>
+							
+					</fieldset>
+					
+					<div class="numbered"><p>7.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="other-income">Other Income, if any (specify source):</label> <input type="text" name="other-income" id="other-income" /></p>
+							
+							</div>
+							
+					</fieldset>
+					
+					<div class="numbered"><p>8.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="checking-acct-name">Personal Checking Account Bank Name:</label> <input type="text" name="checking-acct-name" id="checking-acct-name" /></p>
+								
+								<p class="inline"><label for="checking-acct-balance">Personal Checking Account Balance:</label> <input type="text" name="checking-acct-balance" id="checking-acct-balance" /></p>
+								
+								
+							</div>
+							
+							<div class="inline">
+							
+								<p class="inline"><label for="savings-acct-name">Personal Savings Account Bank Name:</label> <input type="text" name="savings-acct-name" id="savings-acct-name" /></p>
+								
+								<p class="inline"><label for="savings-acct-balance">Personal Saving Account Balance:</label> <input type="text" name="savings-acct-balance" id="savings-acct-balance" /></p>
+								
+							</div>
+							
+					</fieldset>
+					
+					<div class="numbered"><p>9.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="personal-ref">Personal Reference:</label> <input type="text" name="personal-ref" id="personal-ref" /></p>
+								
+								<p class="inline"><label for="ref-rel">Relationship:</label> <input type="text" name="ref-rel" id="ref-rel" /></p>
+								
+								<p class="inline"><label for="ref-phone">Phone:</label> <input type="text" name="ref-phone" id="ref-phone" /></p>
+							
+							</div>
+							
+					</fieldset>
+					
+					<div class="numbered"><p>10.</p></div>
+					
+					<fieldset>
+					
+							<div class="inline">
+							
+								<p class="inline"><label for="emergency-contact">Emergency Contact:</label> <input type="text" name="emergency-contact" id="emergency-contact" /></p>
+								
+								<p class="inline"><label for="emergency-contact-rel">Relationship:</label> <input type="text" name="emergency-contact-rel" id="emergency-contact-rel" /></p>
+								
+								<p class="inline"><label for="emergency-contact-phone">Phone:</label> <input type="text" name="emergency-contact-phone" id="emergency-contact-phone" /></p>
+							
+							</div>
+							
+					</fieldset>
+					
+					<div class="numbered"><p>11.</p></div>
+					
+					<fieldset>
+					
+							<div class="referring-source">
+								
+								<p class="single-line">How did you hear about this apartment:</p>
+								
+								<p class="inline black"><label for="craigslist">Craigslist</label><input type="radio" name="referring-source" id="craigslist" value="craigslist"/></p>
+					
+								<p class="inline black"><label for="philly-weekly">Philadelphia Weekly</label><input type="radio" name="referring-source" id="philly-weekly" value="philly-weekly" /></p>
+								
+								<p class="inline black"><label for="building-sign">Building Sign</label><input type="radio" name="referring-source" id="building-sign" value="building-sign" /></p>
+								
+								<p class="inline black"><label for="referral">Referral</label><input type="radio" name="referring-source" id="referral" value="referral" /></p>
+								
+								<p class="inline black"><label for="search">Search Engine / Internet</label><input type="radio" name="referring-source" id="search" value="search" /></p>
+								
+								<p class="inline black"><label for="other-source">Other:</label> <input type="text" name="referring-source" id="other-source" /></p>
+								
+							</div>
+							
+					</fieldset>
+			
+			</div> <!-- end residential-rental-app -->
+		
+			<div class="line"></div>
+			
+			<div id="acknowledgement">
+
+				<fieldset>
+				
+					<p>I certify that the above information is true and complete. I hereby grant permission to Pearl Properties to request my credit report for the purpose of tenant screening. I authorize the verification of this information by contacting any or all individuals and financial institutions listed above. I understand that a criminal background check may be conducted in conjunction with this application. I understand that this is not a lease or an offer to rent, however, a nonrefundable application fee equal to one month&#39;s rent shall accompany this application. If this application is approved, the application fee shall be applied to the security deposit for the above referenced unit. If this application is not approved, the application fee shall be returned (less a $75 processing fee) to Applicant immediately. This Application shall remain the property of the Owner.</p>
+					<br />
+					
+
+					<div class="inline">
+						
+						<p class="inline"><label for="signature">By checking this box I acknowledge that I have read the above and completed the application:</label><input type="checkbox" name="signature" id="signature" value="yes"/></p>
+						
+						<p class="inline"><label for="sig-date">Date:</label> <input type="text" name="sig-date" id="sig-date" /></p>
+						
+					</div>
+					
+				</fieldset>
+				
+				<fieldset>
+					
+					<div class="inline">
+					
+						<p class="inline fine-print"><label for="auth-tenant-ref">I hereby consent to allow Pearl Properties to verify my tenant references, if necessary, for the processing of this application:</label></p>
+						
+						<p class="inline"><label for="auth-tenant-ref"><input type="checkbox" name="auth-tenant-ref" id="auth-tenant-ref" value="yes" /></p>
+						
+						<p class="inline"><label for="auth-tenant-ref-date">Date:</label> <input type="text" name="auth-tenant-ref-date" id="auth-tenant-ref-date" /></p>
+						
+					</div>
+					
+				</fieldset>
+				
+				<fieldset>
+					
+					<div class="inline">
+						
+						<p class="inline fine-print"><label for="authorize-employment-ref">I hereby consent to allow Pearl Properties to verify my employment references, if necessary, for the processing of this application:</label></p>
+						
+						<p class="inline"><input type="checkbox" name="auth-employment-ref" id="auth-employment-ref" value="yes" /></p>
+						
+						<p class="inline"><label for="auth-employment-ref-date">Date:</label> <input type="text" name="auth-employment-ref-date" id="auth-employment-ref-date" /></p>
+					
+					</div>
+					
+					<div class="inline complete">
+					
+						<!-- submit button -->
+						<p><input type="submit" name="submit-btn" id="submit-btn" value="Submit Application" /></p>
+					
+					</div>
+						
+				</fieldset>
+				
+			</div>
+			
+			<div id="equal-opp">
+				<h2>NO PERSON SHALL BE DENIED THE RIGHT TO RENT OUR PROPERTY BECAUSE OF THEIR RACE, COLOR, RELIGION, SEX, NATIONAL ORIGIN OR ANCESTRY.</h2>
+			</div>
+		
+			</form>
+		
+		</div> <!-- end main-wrapper -->
+		
+	</body>
+
+</html>
