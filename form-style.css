@@ -1,0 +1,545 @@
+/* DEFAULTS */
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}									
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+/* html {overflow-y: scroll;} */
+
+/* we use a lot of ULs that aren't bulleted. 
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before, 
+blockquote:after, 
+q:before, 
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;  color: #8DA9C1;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+ 
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none; color: #ffffff;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;} 
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label, 
+input[type=button], 
+input[type=submit], 
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+ 
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+.clearfix:after { clear: both; }  
+.clearfix { zoom: 1; }
+
+* ::selection {
+	background: transparent;
+	color: #990000;
+}
+
+
+#page-wrapper {
+	width: 100%;
+	height: auto;
+}
+
+#header {
+	width: 960px;
+	height: auto;
+	padding: 30px 0 30px 120px;
+}
+
+/* REUSABLE ELEMENTS */
+
+.light-section-break {
+	width: 100%;
+	height: 35px;
+	background-color: #eaeaea;
+}
+
+.dark-section-break {
+	width: 100%;
+	height: 35px;
+	background-color: #a3a3a3;
+}
+
+.light-section-wrapper {
+	width: 100%;
+	height: auto;
+	background-color: #f3f3f3;
+}
+
+.dark-section-wrapper {
+	width: 100%;
+	height: auto;
+	background-color: #bdbdbd;
+}
+
+/* section headings */
+.lightblue {
+	color: #8da9c1;
+}
+
+.darkblue {
+	color: #03417e;
+}
+
+.white {
+	color: #fff;
+}
+
+.slate {
+	color: #7a7e7c;
+}
+
+.light-section-header h1, .dark-section-header h1 {
+	font-family: "Open Sans Condensed", helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	padding: 20px 0 20px 120px;
+	border-bottom: 4px dotted #c4c4c5;
+}
+
+.dark-section-header h1 {
+	border-bottom: 4px dotted white;
+}
+
+.wrapper {
+	width: 960px;
+	height: auto;
+	padding: 30px 0 50px 120px;
+}
+
+/* RENTAL APPLICATION INSTRUCTIONS */
+
+td.checkbox {
+	background: url(images/checkbox.gif) left top no-repeat;
+	width: 30px;
+	height: auto;
+}
+
+td.instructions {
+	width: 485px;
+	height: auto;
+	padding-bottom: 10px;
+}
+
+p {
+	font-family: helvetica, sans-serif;
+	font-size: 14px;
+	color: #7e8381;
+}
+
+/* LEASING INFORMATION / REUSABLE */
+
+td.label, td.label-applicant-info, td.label-pets, td.label-leasing-hist, td.label-employment-info, td.label-other-income,
+td.label-banking-info, td.label-personal-ref, td.label-emergency-contact {
+	width: 260px;
+	height: auto;
+	color: white;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 4px;
+	font-family: helvetica, sans-serif;
+	font-size: 14px;
+}
+
+td.field {
+	width: auto;
+	min-height: 15px;
+	padding-bottom: 7px;
+}
+
+input, select {
+	width: 250px;
+	border: 1px solid #a3a3a3;
+	padding: 5px;
+	font-family: helvetica, sans-serif;
+	color: #666;
+	font-size: 12px;
+	height: 25px;
+}
+
+
+/* APPLICANT INFORMATION */
+
+td.label-applicant-info {
+	width: 260px;
+	color: #a3a3a3;
+}
+
+/* LEASING HISTORY */
+
+td.label-leasing-hist {
+	width: 260px;
+}
+
+/* ADDITIONAL RESIDENTS */
+
+p.res {
+	font-size: 13px;
+}
+
+table.addtl-residents {
+	margin-top: 10px;
+}
+
+td.resident {
+	width: auto;
+	padding-right: 10px;
+	padding-top: 7px;
+}
+
+input#resident1, input#resident2, input#resident3, input#resident4 {
+	width: 256px;
+}
+
+/* PETS */
+
+td.label-pets {	
+	width: 90px;
+}
+
+input#pets {
+	width: 420px;
+}
+	
+/* BACKGROUND INFORMATION */
+
+.label-radio-btn {
+	width: 20px;
+	height: auto;
+	color: #7e8381;
+	text-align: left;
+	padding-left: 10px;
+	font-family: helvetica, sans-serif;
+	font-size: 14px;
+}
+
+input.radio-btn {
+	width: 20px;
+	height: auto;
+	border: none;
+	vertical-align: middle;
+}
+
+p.inline {
+	display: inline;
+	font-size: 13px;
+}
+
+p.bg-info {
+	font-size: 14px;
+	width: 520px;
+}
+
+.explanation {
+	display: none;
+	padding-top: 15px;
+}
+
+textarea {
+	margin-top: 10px;
+	width: 520px;
+	height: 150px;
+	border: 1px solid #a3a3a3;
+}
+
+/* EMPLOYMENT INFORMATION */
+
+td.label-employment-info {
+	width: 260px;
+}
+
+/* OTHER INCOME */
+
+td.label-other-income {
+	width: 195px;
+	color: #a3a3a3;
+}
+
+input#other-income {
+	width: 316px;
+}
+
+/* BANKING INFO */
+
+td.label-banking-info {
+	width: 255px;
+}
+
+input#checking-acct-name, input#checking-acct-balance, 
+input#savings-acct-name, input#savings-acct-balance {
+	width: 256px;
+}
+
+/* PERSONAL REFERENCE */
+	
+td.label-personal-ref {
+	color: #a3a3a3;
+	width: 263px;
+}
+
+/* EMERGENCY CONTACT */
+
+td.label-emergency-contact {
+	width: 263px;
+}
+	
+/* HOW DID YOU HEAR ABOUT... */
+
+.label-referring-source {
+	width: auto;
+	height: auto;
+	color: #7e8381;
+	text-align: left;
+	padding-left: 10px;
+	font-family: helvetica, sans-serif;
+	font-size: 13px;
+	vertical-align: baseline;
+}
+
+#other-source {
+	padding-right: 10px;
+	padding-left:0;
+}
+
+input#other-source {
+	width: 243px;
+	
+}
+
+.label-referring-source:first-child, .label-referring-source:last-child {
+	padding-left: 0;
+}
+
+/* :first-child not yet supported by ie */
+.first-child {
+	padding-left: 0;
+}
+
+/* SIGNATURE SECTION */
+
+p.acknowledgment, p.authorization {
+	font-size: 14px;
+	color: white;
+	width: 520px;
+}
+
+p.authorization {
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+.auth {
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+input#signature, input#auth-tenant-ref, input#auth-employment-ref {
+	width: auto;
+	margin-right: 15px;
+	border: 0;
+}
+
+input#sig-date, input#auth-tenant-ref-date, input#auth-employment-ref-date {
+	width: 100px;
+}
+
+label.sig-date {
+	font-family: helvetica, arial, sans-serif;
+	color: white;
+	font-size: 14px;
+}
+
+#submit-wrapper {
+	height: auto;
+	border-top: 4px dotted white;
+	padding: 20px 0 50px 120px;
+	margin-top: -20px;
+}
+
+button.submit-btn {
+	margin: 10px auto;
+	border: 0;
+	color: white;
+	font-family: helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 10px 10px;
+	width: 100px;
+	background: #ff6600; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff8d47 0%, #ff6600 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff8d47), color-stop(100%,#ff6600)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff8d47 0%,#ff6600 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff8d47 0%,#ff6600 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff8d47 0%,#ff6600 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ff8d47 0%,#ff6600 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8d47', endColorstr='#ff6600',GradientType=0 ); /* IE6-9 */
+   }
+   
+ /* FAQ POP-UP FOR GRANARY ONLY */
+ 
+ p.blue {
+	color: #AFBD21;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+p.slate-blue {
+	color: #575f5c;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+.buffer {
+	padding-bottom: 20px;
+}
+
+h2 {
+	font-size: 130%;
+	font-weight: normal;
+	padding-bottom: 20px;
+	color: #AFBD21;
+}
+
+/* #main-wrapper {
+	width: 960px;
+	padding: 0;
+	margin: 0;
+} */
+
+.get-instructions {
+	float: right;
+	padding-right: 18%;
+	margin-top: -4.25%;
+	padding-bottom: 0;
+}
+
+.get-instructions a:link, .get-instructions a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.jqModal {
+	background-color: #AFBD21;
+	display:inline-block;
+	color:#fff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:normal;
+	padding:6px 20px;
+	text-decoration:none;
+}
+
+#app-instructions {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+#app-instructions-granary {
+	position: absolute;
+	width: 500px;
+	text-align: center;
+	top: 4%;
+	left: 10%;
+	padding-bottom: 20px;
+}
+
+img#form-header {
+	padding-top: 20px;
+}
+
+#app-instructions ol, #app-instructions ul, #app-instructions-granary ol, #app-instructions-granary ul {
+	margin: 0 auto;
+	width: 450px;
+	padding-top: 30px;
+	list-style-position: outside;
+	
+}
+
+#app-instructions ul, #app-instructions-granary ul {
+	list-style-type: none;
+	padding-top: 15px;
+}
+
+#app-instructions ol li, #app-instructions-granary ol li, #app-instructions ul li, #app-instructions-granary ul li {
+	font-size: 14px;
+	text-align: left;
+	padding-top: 2px;
+	padding-bottom: 10px;
+	margin-left: 30px;
+}
+
+#app-instructions ul li, #app-instructions-granary ul li {
+	margin-left: 0;
+}
